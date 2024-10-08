@@ -1,0 +1,67 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<main class="container mx-auto px-6 py-8">
+    <section id="banniere" class="text-center py-20 bg-blue-100 rounded-lg mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Bienvenue sur notre MarketPlace Multivendeur</h1>
+        <p class="text-xl text-gray-600 mb-8">Découvrez des milliers de produits de vendeurs indépendants !</p>
+        <a href="#explorer" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition duration-300">Explorer les boutiques</a>
+    </section>
+
+    <section id="vendeurs-vedettes" class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Vendeurs vedettes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="vendeur1.jpg" alt="Boutique de Jean" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-2">Boutique de Jean</h3>
+                <p class="text-gray-600 mb-4">Spécialiste en électronique</p>
+                <a href="#boutique-jean" class="text-blue-500 hover:text-blue-600">Visiter la boutique</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="vendeur2.jpg" alt="Mode par Marie" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-2">Mode par Marie</h3>
+                <p class="text-gray-600 mb-4">Vêtements tendance</p>
+                <a href="#boutique-marie" class="text-blue-500 hover:text-blue-600">Visiter la boutique</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Explorez nos catégories</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <a href="#electronique" class="bg-white p-4 rounded-lg shadow-md text-center hover:bg-gray-50 transition duration-300">Électronique</a>
+            <a href="#mode" class="bg-white p-4 rounded-lg shadow-md text-center hover:bg-gray-50 transition duration-300">Mode</a>
+            <a href="#maison" class="bg-white p-4 rounded-lg shadow-md text-center hover:bg-gray-50 transition duration-300">Maison & Jardin</a>
+            <a href="#beaute" class="bg-white p-4 rounded-lg shadow-md text-center hover:bg-gray-50 transition duration-300">Beauté & Bien-être</a>
+            <a href="#sports" class="bg-white p-4 rounded-lg shadow-md text-center hover:bg-gray-50 transition duration-300">Sports & Loisirs</a>
+            <a href="#alimentation" class="bg-white p-4 rounded-lg shadow-md text-center hover:bg-gray-50 transition duration-300">Alimentation</a>
+        </div>
+    </section>
+
+    <section id="produits-populaires" class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Produits populaires</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="produit1.jpg" alt="Produit 1" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2">Produit 1</h3>
+                <p class="text-gray-600 mb-2">Prix : 19,99 €</p>
+                <p class="text-sm text-gray-500 mb-4">Vendeur : Boutique de Jean</p>
+                <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Ajouter au panier</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="produit2.jpg" alt="Produit 2" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2">Produit 2</h3>
+                <p class="text-gray-600 mb-2">Prix : 29,99 €</p>
+                <p class="text-sm text-gray-500 mb-4">Vendeur : Mode par Marie</p>
+                <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="devenir-vendeur" class="bg-gray-200 p-8 rounded-lg text-center">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Devenez vendeur sur notre plateforme</h2>
+        <p class="text-gray-600 mb-6">Rejoignez notre communauté de vendeurs et développez votre activité !</p>
+        <a href="#inscription-vendeur" class="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition duration-300">S'inscrire comme vendeur</a>
+    </section>
+</main>
+{% endblock %}

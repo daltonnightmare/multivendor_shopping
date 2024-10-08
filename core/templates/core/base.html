@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace Multivendeur - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">MarketPlace Multivendeur</div>
+            <ul class="flex space-x-4">
+                <li><a href="#accueil" class="text-gray-600 hover:text-gray-800">Accueil</a></li>
+                <li><a href="#categories" class="text-gray-600 hover:text-gray-800">Catégories</a></li>
+                <li><a href="#vendeurs" class="text-gray-600 hover:text-gray-800">Vendeurs</a></li>
+                <li><a href="#devenir-vendeur" class="text-gray-600 hover:text-gray-800">Devenir Vendeur</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <a href="#connexion" class="text-gray-600 hover:text-gray-800">Connexion</a>
+                <a href="#panier" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Panier (0)</a>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Liens utiles</h3>
+                <ul class="space-y-2">
+                    <li><a href="#apropos" class="hover:text-gray-300">À propos</a></li>
+                    <li><a href="#cgv" class="hover:text-gray-300">CGV</a></li>
+                    <li><a href="#confidentialite" class="hover:text-gray-300">Politique de confidentialité</a></li>
+                    <li><a href="#aide-vendeurs" class="hover:text-gray-300">Aide aux vendeurs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contactez-nous</h3>
+                <p>Email : contact@marketplacemultivendeur.com</p>
+                <p>Téléphone : 01 23 45 67 89</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+                <div class="flex space-x-4">
+                    <a href="#facebook" class="hover:text-gray-300">Facebook</a>
+                    <a href="#twitter" class="hover:text-gray-300">Twitter</a>
+                    <a href="#instagram" class="hover:text-gray-300">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
